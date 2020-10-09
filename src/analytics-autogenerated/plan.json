@@ -1,0 +1,204 @@
+{
+	"create_time": "2020-10-09T04:51:44.000Z",
+	"display_name": "Web Tracking Plan",
+	"name": "workspaces/demo-asurion-v6/tracking-plans/rs_1icuGQT2UkEybuqK6zicou7ADgs",
+	"rules": {
+		"events": [
+			{
+				"name": "Blog Article Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"type": [
+										"string"
+									]
+								},
+								"subcategory": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"category"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Get Covered CTA",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"utm_campaign": {
+									"type": [
+										"string"
+									]
+								},
+								"utm_source": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Home Page Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"utm_campaign": {
+									"type": [
+										"string"
+									]
+								},
+								"utm_source": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "HomePlus Registration - Payment Complete",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "HomePlus Registration - Personal Details",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"name": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "HomePlus Registration Started",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Service Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			}
+		],
+		"global": {
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"properties": {
+				"context": {
+					"type": "object"
+				},
+				"properties": {
+					"type": "object"
+				},
+				"traits": {
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"group_traits": [
+		],
+		"identify_traits": [
+		]
+	},
+	"update_time": "2020-10-09T05:18:22.000Z"
+}
