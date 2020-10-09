@@ -1,7 +1,7 @@
 # Segment Typewriter Configuration (https://segment.com/docs/protocols/typewriter)
 # Just run `npx typewriter@next` to re-generate a client with the latest versions of these events.
 scripts:
-  token: cat dev.env | jq '.segment_api_token' -r
+  token: echo $SEGMENT_CONFIG_API_TOKEN
 
 # You can find more documentation on configuring this client in the Segment docs.
 # See: https://segment.com/docs/protocols/typewriter
