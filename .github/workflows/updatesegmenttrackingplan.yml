@@ -14,5 +14,7 @@ jobs:
       run: echo "Hello World"
     - name: Create branch
       uses: peterjgrainger/action-create-branch@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         branch: ${{ github.run_id }}
