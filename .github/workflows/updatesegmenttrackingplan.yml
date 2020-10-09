@@ -1,0 +1,13 @@
+name: Update plan.json and create branch
+
+on:
+  repository_dispatch:
+    types:
+      - tracking_plan_updated
+
+jobs:
+  build:
+    name: build
+    steps:
+    - name: Hello World
+      run: echo "Hello World"
