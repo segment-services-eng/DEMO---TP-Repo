@@ -12,3 +12,7 @@ jobs:
     steps:
     - name: Hello World
       run: echo "Hello World"
+    - name: Create branch
+      uses: peterjgrainger/action-create-branch@v1.0.0
+      with:
+        branch: ${{ GITHUB_RUN_ID }}
