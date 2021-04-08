@@ -1,11 +1,11 @@
 {
-	"create_time": "2020-10-09T04:51:44.000Z",
-	"display_name": "Web Tracking Plan",
-	"name": "workspaces/demo-asurion-v6/tracking-plans/rs_1icuGQT2UkEybuqK6zicou7ADgs",
+	"create_time": "2021-03-23T18:52:46.000Z",
+	"display_name": "Demo Simple Site",
+	"name": "workspaces/jslite-sandbox/tracking-plans/rs_1qAbumNrJVHZzmdYrROxfRL7bMX",
 	"rules": {
 		"events": [
 			{
-				"name": "Blog Article Viewed",
+				"name": "Button Clicked",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -13,19 +13,24 @@
 						},
 						"properties": {
 							"properties": {
-								"category": {
+								"button_color": {
 									"type": [
 										"string"
 									]
 								},
-								"subcategory": {
+								"button_text": {
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
 									"type": [
 										"string"
 									]
 								}
 							},
 							"required": [
-								"category"
+								"button_color"
 							],
 							"type": "object"
 						},
@@ -40,7 +45,24 @@
 				"version": 1
 			},
 			{
-				"name": "Get Covered CTA",
+				"name": "Cookies Reset",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Email Link Clicked",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -48,12 +70,17 @@
 						},
 						"properties": {
 							"properties": {
-								"utm_campaign": {
+								"button_clicked_": {
 									"type": [
 										"string"
 									]
 								},
-								"utm_source": {
+								"campaign_name": {
+									"type": [
+										"string"
+									]
+								},
+								"email_subject": {
 									"type": [
 										"string"
 									]
@@ -69,7 +96,7 @@
 				"version": 1
 			},
 			{
-				"name": "Home Page Viewed",
+				"name": "Order Completed",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -77,14 +104,77 @@
 						},
 						"properties": {
 							"properties": {
-								"utm_campaign": {
+								"order_id": {
+									"type": [
+										"integer"
+									]
+								},
+								"payment_method": {
 									"type": [
 										"string"
 									]
 								},
-								"utm_source": {
+								"products": {
+									"items": {
+										"properties": {
+											"category": {
+												"type": [
+													"string"
+												]
+											},
+											"duration": {
+												"type": [
+													"string"
+												]
+											},
+											"expiration_date": {
+												"type": [
+													"string"
+												]
+											},
+											"price": {
+												"type": [
+													"integer"
+												]
+											},
+											"quantity": {
+												"type": [
+													"integer"
+												]
+											},
+											"sku": {
+												"type": [
+													"string"
+												]
+											},
+											"start_date": {
+												"type": [
+													"string"
+												]
+											},
+											"variant": {
+												"type": [
+													"string"
+												]
+											}
+										},
+										"type": "object"
+									},
+									"type": "array"
+								},
+								"shipping": {
 									"type": [
-										"string"
+										"integer"
+									]
+								},
+								"tax": {
+									"type": [
+										"integer"
+									]
+								},
+								"total": {
+									"type": [
+										"integer"
 									]
 								}
 							},
@@ -98,24 +188,7 @@
 				"version": 1
 			},
 			{
-				"name": "HomePlus Registration - Payment Complete",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "HomePlus Registration - Personal Details",
+				"name": "Page Viewed",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -123,10 +196,50 @@
 						},
 						"properties": {
 							"properties": {
+								"campaign": {
+									"properties": {
+										"source": {
+											"type": [
+												"string"
+											]
+										}
+									},
+									"type": "object"
+								},
 								"name": {
 									"type": [
 										"string"
 									]
+								},
+								"path": {
+									"type": [
+										"string"
+									]
+								},
+								"referrer": {
+									"type": [
+										"string"
+									]
+								},
+								"search": {
+									"type": [
+										"string"
+									]
+								},
+								"title": {
+									"type": [
+										"string"
+									]
+								},
+								"url": {
+									"type": [
+										"string"
+									]
+								},
+								"utm_source": {
+									"type": [
+										"string"
+									]
 								}
 							},
 							"type": "object"
@@ -139,24 +252,7 @@
 				"version": 1
 			},
 			{
-				"name": "HomePlus Registration Started",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Service Viewed",
+				"name": "Product Added",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -165,6 +261,206 @@
 						"properties": {
 							"properties": {
 								"category": {
+									"type": [
+										"string"
+									]
+								},
+								"duration": {
+									"type": [
+										"string"
+									]
+								},
+								"expiration_date": {
+									"type": [
+										"string"
+									]
+								},
+								"name": {
+									"type": [
+										"string"
+									]
+								},
+								"price": {
+									"type": [
+										"integer"
+									]
+								},
+								"quantity": {
+									"type": [
+										"integer"
+									]
+								},
+								"sku": {
+									"type": [
+										"string"
+									]
+								},
+								"start_date": {
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Product Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"type": [
+										"string"
+									]
+								},
+								"duration": {
+									"type": [
+										"string"
+									]
+								},
+								"expiration_date": {
+									"type": [
+										"string"
+									]
+								},
+								"price": {
+									"type": [
+										"integer"
+									]
+								},
+								"quantity": {
+									"type": [
+										"integer"
+									]
+								},
+								"sku": {
+									"type": [
+										"string"
+									]
+								},
+								"start_date": {
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Profile Updated",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Signed In",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Signed Up",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"account_type": {
+									"type": [
+										"string"
+									]
+								},
+								"newprop": {
+									"description": "",
+									"type": "object"
+								},
+								"signup_type": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Trial Started",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"trial_end_date": {
+									"type": [
+										"string"
+									]
+								},
+								"trial_plan_name": {
+									"type": [
+										"string"
+									]
+								},
+								"trial_start_date": {
 									"type": [
 										"string"
 									]
@@ -195,10 +491,93 @@
 			},
 			"type": "object"
 		},
+		"group": {
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"properties": {
+				"context": {
+				},
+				"properties": {
+				},
+				"traits": {
+					"properties": {
+						"name": {
+							"type": [
+								"string"
+							]
+						},
+						"primary_account_email": {
+							"type": [
+								"string"
+							]
+						},
+						"subscription": {
+							"type": "object"
+						},
+						"team_type": {
+							"type": [
+								"string"
+							]
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
 		"group_traits": [
 		],
+		"identify": {
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"properties": {
+				"context": {
+				},
+				"properties": {
+				},
+				"traits": {
+					"properties": {
+						"account_type": {
+							"type": [
+								"string"
+							]
+						},
+						"birthday": {
+							"type": [
+								"string"
+							]
+						},
+						"email": {
+							"type": [
+								"string"
+							]
+						},
+						"favorite_color": {
+							"type": [
+								"string"
+							]
+						},
+						"first_name": {
+							"type": [
+								"string"
+							]
+						},
+						"last_name": {
+							"type": [
+								"string"
+							]
+						},
+						"signup_type": {
+							"type": [
+								"string"
+							]
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
 		"identify_traits": [
 		]
 	},
-	"update_time": "2020-10-09T05:18:22.000Z"
+	"update_time": "2021-04-07T22:13:36.000Z"
 }
