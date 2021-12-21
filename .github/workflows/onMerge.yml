@@ -1,9 +1,6 @@
-name: test JSON
-  # To use latest action, specify "release-master" instead of "v0.0.2"
-on:
-  workflow_dispatch:
+name: 'test JSON'
+description: 'Test'
 runs:
   using: 'node12'
   main: 'index.js'
-
 ---
