@@ -2,6 +2,7 @@ name: Test Javascript
 # To use latest action, specify "release-master" instead of "v0.0.2"
 on:
   workflow_dispatch:
+  jobs:
     inputs:
       plan_json:
         description: 'Tracking Plan JSON'
