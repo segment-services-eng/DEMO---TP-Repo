@@ -1,14 +1,10 @@
 
-name: Output current branch name & date
+name: test JSON
   # To use latest action, specify "release-master" instead of "v0.0.2"
 on:
   workflow_dispatch:
-uses: satackey/action-js-inline@v0.0.2
-id: getdata
-with:
-  # Edit the following line to install packages required to run your script.
-  required-packages: axios
-  script: |
-    const core = require('@actions/core')
-
+runs:
+  using: 'node12'
+  main: 'index.js'
+    
 ---
