@@ -1,19 +1,11 @@
-name: Test Javascript
-# To use latest action, specify "release-master" instead of "v0.0.2"
-on:
-  workflow_dispatch:
-  
-jobs:
-  inputs:
-    plan_json:
-      description: 'Tracking Plan JSON'
-      required: true
-  outputs:
-    success:
-      description: boolean value indicating weather the script ran
-  runs:
-    using: 'node12'
-    main: 'protocols-diffs/index.js'
-        
-    
+name: Output current branch name & date
+  # To use latest action, specify "release-master" instead of "v0.0.2"
+uses: satackey/action-js-inline@v0.0.2
+id: getdata
+with:
+  # Edit the following line to install packages required to run your script.
+  required-packages: axios
+  script: |
+    const core = require('@actions/core')
+
 ---
