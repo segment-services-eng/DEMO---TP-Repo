@@ -1,4 +1,6 @@
 name: 'test JSON'
+on:
+  workflow_dispatch:
 description: 'Test'
 runs:
   using: 'node12'
