@@ -9,14 +9,32 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-# The type of runner that the job will run on
     name: build
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a set of commands using the runners shell
-      - name: Hello World
-        run: echo "Hello World"
+    - name: Hello World
+      run: echo "Hello World"
+    - name: Create branch
+      uses: peterjgrainger/action-create-branch@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        branch: ${{ github.run_id }}
+    - name: Checkout branch
+      uses: actions/checkout@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        ref: ${{ github.run_id }}
+    - name: Commit Update Tracking Plan
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SEGMENT_CONFIG_API_TOKEN: ${{ secrets.SEGMENT_CONFIG_API_TOKEN }}
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        npx typewriter update
+        git add .
+        git commit -m "regenerated plan.json"
+        git push
