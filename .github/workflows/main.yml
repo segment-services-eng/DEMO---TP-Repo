@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Config API Action
         id: hello
-        uses: rishnair/protocols-diffs@v3
+        uses: rishnair/protocols-diffs@v4
