@@ -17,8 +17,7 @@ delete payloadJSON["update_time"];
 let newJSON = {};
 newJSON["update_mask"] = {
     "paths": [
-      "tracking_plan.display_name",
-      "tracking_plan.rules"
+      "tracking_plan.rules",
     ]
   };
 newJSON["tracking_plan"] = payloadJSON;
