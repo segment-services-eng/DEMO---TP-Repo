@@ -5,6 +5,24 @@
 	"rules": {
 		"events": [
 			{
+				"name": "Fourth Test Event",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Second Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -94,5 +112,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-01-25T19:10:25.000Z"
+	"update_time": "2022-01-25T19:43:41.000Z"
 }
