@@ -1,7 +1,9 @@
 
    
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   configAPI_update:
     runs-on: ubuntu-latest
