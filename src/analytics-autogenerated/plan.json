@@ -103,10 +103,6 @@
 						},
 						"properties": {
 							"properties": {
-								"Test 5": {
-									"description": "",
-									"type": "object"
-								},
 								"Test 6": {
 									"description": "",
 									"type": "object"
@@ -128,6 +124,10 @@
 									"type": "object"
 								},
 								"Test Property 3": {
+									"description": "",
+									"type": "object"
+								},
+								"Testing": {
 									"description": "",
 									"type": "object"
 								}
@@ -166,5 +166,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-01-26T18:05:13.000Z"
+	"update_time": "2022-01-26T18:12:42.000Z"
 }
