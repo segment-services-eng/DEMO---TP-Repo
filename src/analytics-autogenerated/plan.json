@@ -143,7 +143,43 @@
 				"version": 1
 			},
 			{
+				"name": "Test Event 10",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Third Test Event",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Tracking Plan 9",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -166,5 +202,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-01-26T18:12:42.000Z"
+	"update_time": "2022-02-11T16:36:06.000Z"
 }
