@@ -12,3 +12,5 @@ jobs:
       - name: Config API Action
         id: hello
         uses: rishnair/protocols-diffs@main
+        with:
+         Tracking-Plan-Type: 'Dev'
