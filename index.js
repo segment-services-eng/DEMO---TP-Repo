@@ -13,6 +13,12 @@ let payloadJSON = JSON.parse(payloadFile);
 delete payloadJSON["name"];
 delete payloadJSON["create_time"];
 delete payloadJSON["update_time"];
+    
+const trackingPlanType = core.getInput('Tracking-Plan-Type');
+let payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/protocols-diffs/tracking-plans/rs_21k7cGxAiOsvxfxBMXdR2Z1iOGr';
+if (trackingPlanType == 'QA'){
+    payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/protocols-diffs/tracking-plans/rs_25qwKyvscf4mcxbPA6c1xO4xJRf';   
+}
 
 let newJSON = {};
 newJSON["update_mask"] = {
@@ -25,7 +31,7 @@ var json = JSON.stringify(newJSON);
 
 var options = {
     'method': 'PUT',
-    'url': 'https://platform.segmentapis.com/v1beta/workspaces/protocols-diffs/tracking-plans/rs_21k7cGxAiOsvxfxBMXdR2Z1iOGr',
+    'url': payloadURL,
     'headers': {
       'Authorization': 'Bearer lz76O8KXwjMeYnnvk3aKlCas721IFP-7x2V7s_oN8kc.DwF1Wi8UGqZ12AbVJFXY_Aa7ebBBUiCdXwXUiyy8xvk',
       'Content-Type': 'application/json'
