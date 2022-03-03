@@ -1,6 +1,10 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
-
+inputs:
+  Tracking-Plan-Type:
+    description: 'Dev or QA'
+    required: true
+    default: 'Dev'
 runs:
   using: 'node12'
   main: 'index.js'
