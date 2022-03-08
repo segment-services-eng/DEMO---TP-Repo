@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Config API Action
         id: hello
-        uses: rishnair/protocols-diffs@main
+        uses: rishnair/Segment-Tracking-Plan@main
         with:
          Tracking-Plan-Type: 'Dev'
