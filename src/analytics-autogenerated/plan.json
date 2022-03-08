@@ -167,6 +167,24 @@
 				"version": 1
 			},
 			{
+				"name": "Test Event 11",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Third Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -208,5 +226,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-08T19:05:12.000Z"
+	"update_time": "2022-03-08T19:12:28.000Z"
 }
