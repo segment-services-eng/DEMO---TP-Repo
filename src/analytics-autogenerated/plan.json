@@ -15,6 +15,14 @@
 							"properties": {
 								"Test Property 1": {
 									"description": "",
+									"properties": {
+										"Nested Property 1": {
+											"description": "",
+											"type": "object"
+										}
+									},
+									"required": [
+									],
 									"type": "object"
 								}
 							},
@@ -36,6 +44,12 @@
 						"context": {
 						},
 						"properties": {
+							"properties": {
+								"Test Event 3": {
+									"description": "",
+									"type": "object"
+								}
+							},
 							"type": "object"
 						},
 						"traits": {
@@ -54,6 +68,12 @@
 						"context": {
 						},
 						"properties": {
+							"properties": {
+								"Property": {
+									"description": "",
+									"type": "object"
+								}
+							},
 							"type": "object"
 						},
 						"traits": {
@@ -156,6 +176,12 @@
 						"context": {
 						},
 						"properties": {
+							"properties": {
+								"Test 10": {
+									"description": "",
+									"type": "object"
+								}
+							},
 							"type": "object"
 						},
 						"traits": {
@@ -226,5 +252,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-08T19:12:28.000Z"
+	"update_time": "2022-03-08T21:35:39.000Z"
 }
