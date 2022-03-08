@@ -17,13 +17,13 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: ${{ github.run_id }}
+        branch: ${{ github.event.client_payload.timestamp }}
     - name: Checkout branch
       uses: actions/checkout@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        ref: ${{ github.run_id }}
+        ref: ${{ github.event.client_payload.timestamp }}
     - name: Commit Update Tracking Plan
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
