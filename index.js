@@ -15,9 +15,9 @@ delete payloadJSON["create_time"];
 delete payloadJSON["update_time"];
     
 const trackingPlanType = core.getInput('Tracking-Plan-Type');
-let payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/Segment-Tracking-Plan/tracking-plans/rs_21k7cGxAiOsvxfxBMXdR2Z1iOGr';
+let payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/protocols-diffs/tracking-plans/rs_21k7cGxAiOsvxfxBMXdR2Z1iOGr';
 if (trackingPlanType == 'QA'){
-    payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/Segment-Tracking-Plan/tracking-plans/rs_25qwKyvscf4mcxbPA6c1xO4xJRf';   
+    payloadURL = 'https://platform.segmentapis.com/v1beta/workspaces/protocols-diffs/tracking-plans/rs_25qwKyvscf4mcxbPA6c1xO4xJRf';   
 }
 
 let newJSON = {};
