@@ -12,6 +12,12 @@
 						"context": {
 						},
 						"properties": {
+							"properties": {
+								"Test Property 1": {
+									"description": "",
+									"type": "object"
+								}
+							},
 							"type": "object"
 						},
 						"traits": {
@@ -202,5 +208,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-02-11T16:36:06.000Z"
+	"update_time": "2022-03-08T19:05:12.000Z"
 }
