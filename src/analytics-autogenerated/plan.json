@@ -179,6 +179,14 @@
 							"properties": {
 								"Test 10": {
 									"description": "",
+									"properties": {
+										"Nested Test Property": {
+											"description": "",
+											"type": "object"
+										}
+									},
+									"required": [
+									],
 									"type": "object"
 								}
 							},
@@ -252,5 +260,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-08T21:35:39.000Z"
+	"update_time": "2022-03-09T17:04:52.000Z"
 }
