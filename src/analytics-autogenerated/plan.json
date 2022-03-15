@@ -24,6 +24,10 @@
 									"required": [
 									],
 									"type": "object"
+								},
+								"Test Property 2": {
+									"description": "",
+									"type": "object"
 								}
 							},
 							"type": "object"
@@ -260,5 +264,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-09T17:04:52.000Z"
+	"update_time": "2022-03-15T23:32:41.000Z"
 }
