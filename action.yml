@@ -5,6 +5,10 @@ inputs:
     description: 'Dev or QA'
     required: true
     default: 'Dev'
+  Segment-Token:
+    description: 'Segment Auth Token'
+    required: true
+    default: 'Input Required Here'
 runs:
   using: 'node12'
   main: 'index.js'
