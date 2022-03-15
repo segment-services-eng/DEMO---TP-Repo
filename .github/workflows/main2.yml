@@ -11,3 +11,4 @@ jobs:
         uses: rishnair/Segment-Tracking-Plan@main
         with:
          Tracking-Plan-Type: 'QA'
+         Segment-Token: ${{ secrets.SEGMENT_CONFIG_API_TOKEN }}
