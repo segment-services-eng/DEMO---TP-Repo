@@ -23,6 +23,24 @@
 				"version": 1
 			},
 			{
+				"name": "Demo Test Event",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Fifth Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -282,5 +300,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-17T21:00:09.000Z"
+	"update_time": "2022-03-17T21:36:44.000Z"
 }
