@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rishnair/Segment-Tracking-Plan.git"
+    "url": "git+https://github.com/segment-services-eng/Segment-Tracking-Plan.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rishnair/Segment-Tracking-Plan/issues"
+    "url": "https://github.com/segment-services-eng/Segment-Tracking-Plan/issues"
   },
-  "homepage": "https://github.com/rishnair/Segment-Tracking-Plan#readme",
+  "homepage": "https://github.com/segment-services-eng/Segment-Tracking-Plan#readme",
   "devDependencies": {
     "typewriter": "^7.2.1"
   },
