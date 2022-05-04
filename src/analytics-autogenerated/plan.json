@@ -5,24 +5,6 @@
 	"rules": {
 		"events": [
 			{
-				"name": "Demo Test",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
 				"name": "Demo Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -41,7 +23,43 @@
 				"version": 1
 			},
 			{
+				"name": "Demo Test Event - Another Test",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Demo Test Event 2",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Demo Test Event!!!",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -143,90 +161,6 @@
 				"version": 1
 			},
 			{
-				"name": "Seventh T",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Sixth Test Event",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Test Event",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"Test 6": {
-									"description": "",
-									"type": "object"
-								},
-								"Test Property": {
-									"description": "",
-									"type": "object"
-								},
-								"Test Property 2": {
-									"description": "",
-									"properties": {
-										"Test Property 4": {
-											"description": "",
-											"type": "object"
-										}
-									},
-									"required": [
-									],
-									"type": "object"
-								},
-								"Test Property 3": {
-									"description": "",
-									"type": "object"
-								},
-								"Testing": {
-									"description": "",
-									"type": "object"
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
 				"name": "Test Event 10",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -248,42 +182,6 @@
 									"type": "object"
 								}
 							},
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Test Event 11",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Third Test Event",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
 							"type": "object"
 						},
 						"traits": {
@@ -318,5 +216,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-03-17T22:11:13.000Z"
+	"update_time": "2022-05-04T15:50:22.000Z"
 }
