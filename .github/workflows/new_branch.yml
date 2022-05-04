@@ -1,5 +1,4 @@
-name: New Branch on Inbound Webhook
-
+name: Sandbox Update > New Branch
 on:
   repository_dispatch:
     types:
@@ -10,8 +9,6 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
-    - name: Hello World
-      run: echo "Hello World"
     - name: Create branch
       uses: peterjgrainger/action-create-branch@v1.0.0
       env:
@@ -35,4 +32,3 @@ jobs:
         git add .
         git commit -m "regenerated plan.json"
         git push
-

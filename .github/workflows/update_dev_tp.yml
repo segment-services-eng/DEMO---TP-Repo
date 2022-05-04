@@ -1,6 +1,8 @@
+name: Update Dev TP
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 jobs:
   configAPI_update:
     runs-on: ubuntu-latest
@@ -10,5 +12,5 @@ jobs:
         id: hello
         uses: segment-services-eng/Segment-Tracking-Plan@main
         with:
-         Tracking-Plan-Type: 'QA'
+         Tracking-Plan-Type: 'Dev'
          Segment-Token: ${{ secrets.SEGMENT_CONFIG_API_TOKEN }}

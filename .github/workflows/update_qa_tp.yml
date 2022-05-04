@@ -1,7 +1,7 @@
+name: Update QA TP
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 jobs:
   configAPI_update:
     runs-on: ubuntu-latest
@@ -11,5 +11,5 @@ jobs:
         id: hello
         uses: segment-services-eng/Segment-Tracking-Plan@main
         with:
-         Tracking-Plan-Type: 'Dev'
+         Tracking-Plan-Type: 'QA'
          Segment-Token: ${{ secrets.SEGMENT_CONFIG_API_TOKEN }}
