@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Config API Action
         id: hello
-        uses: segment-services-eng/Segment-Tracking-Plan@main
+        uses: segment-services-eng/DEMO---TP-Repo@main
         with:
          Tracking-Plan-Type: 'Dev'
          Segment-Token: ${{ secrets.SEGMENT_CONFIG_API_TOKEN }}
