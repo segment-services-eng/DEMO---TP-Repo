@@ -5,79 +5,8 @@
 	"rules": {
 		"events": [
 			{
-				"name": "Demo Test Event",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Demo Test Event - Another Test",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Demo Test Event 2",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Demo Test Event!!!",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-							"type": "object"
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Fifth Test Event",
+				"description": "User clicks any button",
+				"name": "Button Clicked",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -85,35 +14,40 @@
 						},
 						"properties": {
 							"properties": {
-								"Test Property 1": {
-									"description": "",
-									"properties": {
-										"Nested Property 1": {
-											"description": "",
-											"type": "object"
-										}
-									},
-									"required": [
-									],
-									"type": "object"
+								"button_color": {
+									"type": [
+										"string"
+									]
 								},
-								"Test Property 2": {
-									"description": "",
-									"type": "object"
+								"button_text": {
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
+									"type": [
+										"string"
+									]
 								}
 							},
+							"required": [
+								"button_color"
+							],
 							"type": "object"
 						},
 						"traits": {
-							"type": "object"
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
 			},
 			{
-				"name": "Fourth Test Event",
+				"description": "User clicks email link",
+				"name": "Email Link Clicked",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -121,15 +55,20 @@
 						},
 						"properties": {
 							"properties": {
-								"Test Event 3": {
-									"description": "",
-									"type": "object"
+								"campaign_name": {
+									"type": [
+										"string"
+									]
+								},
+								"email_subject": {
+									"type": [
+										"string"
+									]
 								}
 							},
 							"type": "object"
 						},
 						"traits": {
-							"type": "object"
 						}
 					},
 					"type": "object"
@@ -137,7 +76,26 @@
 				"version": 1
 			},
 			{
-				"name": "Second Test Event",
+				"description": "User views any page",
+				"name": "Page Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"description": "User updates profile",
+				"name": "Profile Updated",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -145,23 +103,65 @@
 						},
 						"properties": {
 							"properties": {
-								"Property": {
-									"description": "",
-									"type": "object"
+								"account_type": {
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"type": [
+										"string"
+									]
+								},
+								"signup_type": {
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
+									"type": [
+										"string"
+									]
 								}
 							},
+							"required": [
+								"user_id"
+							],
 							"type": "object"
 						},
 						"traits": {
-							"type": "object"
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
 			},
 			{
-				"name": "Test Event 10",
+				"description": "User signs in",
+				"name": "Signed In",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -169,52 +169,145 @@
 						},
 						"properties": {
 							"properties": {
-								"Test 10": {
-									"description": "",
-									"properties": {
-										"Nested Test Property": {
-											"description": "",
-											"type": "object"
-										}
-									},
-									"required": [
-									],
-									"type": "object"
+								"account_type": {
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"type": [
+										"string"
+									]
+								},
+								"signup_type": {
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
+									"type": [
+										"string"
+									]
 								}
 							},
+							"required": [
+								"user_id"
+							],
 							"type": "object"
 						},
 						"traits": {
-							"type": "object"
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
 			},
 			{
-				"name": "Tracking Plan 9",
+				"description": "User signs up",
+				"name": "Signed Up",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
 						"context": {
 						},
 						"properties": {
+							"properties": {
+								"account_type": {
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"type": [
+										"string"
+									]
+								},
+								"signup_type": {
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"user_id"
+							],
 							"type": "object"
 						},
 						"traits": {
-							"type": "object"
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
 			}
 		],
+		"global": {
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"properties": {
+				"context": {
+				},
+				"properties": {
+				},
+				"traits": {
+				}
+			},
+			"type": "object"
+		},
 		"group_traits": [
 		],
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-05-04T15:50:22.000Z"
+	"update_time": "2022-05-04T16:47:40.000Z"
 }
