@@ -76,6 +76,46 @@
 				"version": 1
 			},
 			{
+				"description": "User invites another user",
+				"name": "Invite Sent",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"invitee_email": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_first_name": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_last_name": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_role": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"description": "User completes purchase process",
 				"name": "Order Completed",
 				"rules": {
@@ -582,5 +622,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-05-04T17:46:22.000Z"
+	"update_time": "2022-05-04T17:24:27.000Z"
 }
