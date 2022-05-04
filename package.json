@@ -1,5 +1,5 @@
 {
-  "name": "Segment-Tracking-Plan",
+  "name": "DEMO---TP-Repo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/segment-services-eng/Segment-Tracking-Plan.git"
+    "url": "git+https://github.com/segment-services-eng/DEMO---TP-Repo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/segment-services-eng/Segment-Tracking-Plan/issues"
+    "url": "https://github.com/segment-services-eng/DEMO---TP-Repo/issues"
   },
-  "homepage": "https://github.com/segment-services-eng/Segment-Tracking-Plan#readme",
+  "homepage": "https://github.com/segment-services-eng/DEMO---TP-Repo#readme",
   "devDependencies": {
     "typewriter": "^7.2.1"
   },
