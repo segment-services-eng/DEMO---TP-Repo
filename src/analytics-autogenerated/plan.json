@@ -76,6 +76,152 @@
 				"version": 1
 			},
 			{
+				"description": "User invites another user",
+				"name": "Invite Sent",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"invitee_email": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_first_name": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_last_name": {
+									"type": [
+										"string"
+									]
+								},
+								"invitee_role": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"description": "User completes purchase process",
+				"name": "Order Completed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"order_id": {
+									"type": [
+										"string"
+									]
+								},
+								"payment_method": {
+									"type": [
+										"string"
+									]
+								},
+								"products": {
+									"items": {
+										"properties": {
+											"category": {
+												"type": [
+													"string"
+												]
+											},
+											"duration": {
+												"type": [
+													"string"
+												]
+											},
+											"expiration_date": {
+												"type": [
+													"string"
+												]
+											},
+											"price": {
+												"type": [
+													"number"
+												]
+											},
+											"quantity": {
+												"type": [
+													"integer"
+												]
+											},
+											"sku": {
+												"type": [
+													"string"
+												]
+											},
+											"start_date": {
+												"type": [
+													"string"
+												]
+											},
+											"variant": {
+												"type": [
+													"string"
+												]
+											}
+										},
+										"required": [
+										],
+										"type": [
+											"object"
+										]
+									},
+									"type": [
+										"array"
+									]
+								},
+								"shipping": {
+									"type": [
+										"number"
+									]
+								},
+								"tax": {
+									"type": [
+										"number"
+									]
+								},
+								"total": {
+									"type": [
+										"number"
+									]
+								}
+							},
+							"required": [
+								"order_id",
+								"total"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"description": "User views any page",
 				"name": "Page Viewed",
 				"rules": {
@@ -89,6 +235,138 @@
 						"traits": {
 						}
 					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"description": "User adds product to cart",
+				"name": "Product Added",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"type": [
+										"string"
+									]
+								},
+								"duration": {
+									"type": [
+										"string"
+									]
+								},
+								"expiration_date": {
+									"type": [
+										"string"
+									]
+								},
+								"price": {
+									"type": [
+										"number"
+									]
+								},
+								"quantity": {
+									"type": [
+										"integer"
+									]
+								},
+								"sku": {
+									"type": [
+										"string"
+									]
+								},
+								"start_date": {
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"sku"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"description": "User views a product",
+				"name": "Product Viewed",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"type": [
+										"string"
+									]
+								},
+								"duration": {
+									"type": [
+										"string"
+									]
+								},
+								"expiration_date": {
+									"type": [
+										"string"
+									]
+								},
+								"price": {
+									"type": [
+										"number"
+									]
+								},
+								"quantity": {
+									"type": [
+										"integer"
+									]
+								},
+								"sku": {
+									"type": [
+										"string"
+									]
+								},
+								"start_date": {
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"sku"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
@@ -344,5 +622,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-05-04T19:24:51.000Z"
+	"update_time": "2022-05-04T22:16:31.000Z"
 }
