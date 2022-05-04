@@ -1,4 +1,4 @@
-name: Update plan.json and create branch
+name: New Branch on Inbound Webhook
 
 on:
   repository_dispatch:
