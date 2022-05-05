@@ -16,13 +16,17 @@ Segment-Tracking-Plan: gitRepoSlug
 3. Go to Settings -> Workspace Settings -> Audit Forwarding and enable the Forward to the following Source: toggle
 4. Select Segment Activity Feed.
 
-5. Copy this code into a destination function on Segment:
+5. Create a new custom destination function
+6. Copy this code into a destination function on Segment:
+```
+/**
+ * This function ingests a "Tracking Plan Updated" event from activity feed
+ * and posts it to a GitHub repo via the /dispatches endpoint
+ * Required settings are gitUser, gitRepoSlug, and gitToken
+ */
 async function onTrack(event, settings) {
-	// Learn more at https://segment.com/docs/connections/spec/track/
 	const devEndpoint = `https://api.github.com/repos/${settings.gitUser}/${settings.gitRepoSlug}/dispatches`;
-	const prodEndpoint = `https://api.github.com/repos/${settings.gitUser}/${settings.gitProdRepoSlug}/dispatches`;
 	var userSubject = event.properties.details.subject;
-	var userBool = userSubject.includes('user/');
 	var tokenBool = userSubject.includes('token/');
 	var trackingPlan = event.properties.details.target;
 
@@ -35,7 +39,7 @@ async function onTrack(event, settings) {
 
 	if (
 		(event.properties.type == 'Tracking Plan Modified') &
-		userBool &
+		// userBool &
 		(trackingPlan == 'Sandbox Tracking Plan')
 	) {
 		try {
@@ -64,14 +68,14 @@ async function onTrack(event, settings) {
 		}
 	}
 }
-
-6. Create 3 Settings:
+````
+7. Create 3 Settings:
    gitToken, gitUser, gitRepoSlug.
    Input the appropriate values
 
-7. Save and Configure the function.
-8. Navigate Back to the Catalog and select your function and click on Connect Destination
-9. Create your Destination and Connect it to your Segment Activity Feed Source
+8. Save and Configure the function.
+9. Navigate Back to the Catalog and select your function and click on Connect Destination
+10. Create your Destination and Connect it to your Segment Activity Feed Source
 
 # Repo Setup
 
