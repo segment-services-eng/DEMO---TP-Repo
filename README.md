@@ -17,7 +17,7 @@ Segment-Tracking-Plan: gitRepoSlug
 4. Select Segment Activity Feed.
 
 5. Create a new custom destination function
-6. Copy this code into a destination function on Segment:
+6. Paste this code into the new function:
 ```
 /**
  * This function ingests a "Tracking Plan Updated" event from activity feed
