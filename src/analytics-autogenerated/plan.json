@@ -15,16 +15,19 @@
 						"properties": {
 							"properties": {
 								"button_color": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"button_text": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"button_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -56,11 +59,13 @@
 						"properties": {
 							"properties": {
 								"campaign_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"email_subject": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -86,21 +91,25 @@
 						"properties": {
 							"properties": {
 								"invitee_email": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"invitee_first_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"invitee_last_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"invitee_role": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -126,54 +135,65 @@
 						"properties": {
 							"properties": {
 								"order_id": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"payment_method": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"products": {
+									"description": "...",
 									"items": {
 										"properties": {
 											"category": {
+												"description": "...",
 												"type": [
 													"string"
 												]
 											},
 											"duration": {
+												"description": "...",
 												"type": [
 													"string"
 												]
 											},
 											"expiration_date": {
+												"description": "...",
 												"type": [
 													"string"
 												]
 											},
 											"price": {
+												"description": "...",
 												"type": [
 													"number"
 												]
 											},
 											"quantity": {
+												"description": "...",
 												"type": [
 													"integer"
 												]
 											},
 											"sku": {
+												"description": "...",
 												"type": [
 													"string"
 												]
 											},
 											"start_date": {
+												"description": "...",
 												"type": [
 													"string"
 												]
 											},
 											"variant": {
+												"description": "...",
 												"type": [
 													"string"
 												]
@@ -190,16 +210,19 @@
 									]
 								},
 								"shipping": {
+									"description": "...",
 									"type": [
 										"number"
 									]
 								},
 								"tax": {
+									"description": "...",
 									"type": [
 										"number"
 									]
 								},
 								"total": {
+									"description": "...",
 									"type": [
 										"number"
 									]
@@ -250,41 +273,49 @@
 						"properties": {
 							"properties": {
 								"category": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"duration": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"expiration_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"price": {
+									"description": "...",
 									"type": [
 										"number"
 									]
 								},
 								"quantity": {
+									"description": "...",
 									"type": [
 										"integer"
 									]
 								},
 								"sku": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"start_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"variant": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -316,41 +347,49 @@
 						"properties": {
 							"properties": {
 								"category": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"duration": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"expiration_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"price": {
+									"description": "...",
 									"type": [
 										"number"
 									]
 								},
 								"quantity": {
+									"description": "...",
 									"type": [
 										"integer"
 									]
 								},
 								"sku": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"start_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"variant": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -382,41 +421,49 @@
 						"properties": {
 							"properties": {
 								"account_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"birthday": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"email": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"favorite_color": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"first_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"last_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"signup_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"user_id": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -448,41 +495,49 @@
 						"properties": {
 							"properties": {
 								"account_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"birthday": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"email": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"favorite_color": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"first_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"last_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"signup_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"user_id": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -514,47 +569,74 @@
 						"properties": {
 							"properties": {
 								"account_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"birthday": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_color": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_text": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"email": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"favorite_color": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"first_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"last_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"signup_type": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"user_id": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								}
 							},
 							"required": [
+								"button_color",
 								"user_id"
 							],
 							"type": "object"
@@ -580,16 +662,19 @@
 						"properties": {
 							"properties": {
 								"trial_end_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"trial_plan_name": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"trial_start_date": {
+									"description": "...",
 									"type": [
 										"string"
 									]
@@ -622,5 +707,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-05-04T22:16:31.000Z"
+	"update_time": "2022-06-30T19:55:26.000Z"
 }
