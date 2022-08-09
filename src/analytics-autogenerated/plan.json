@@ -5,174 +5,6 @@
 	"rules": {
 		"events": [
 			{
-				"description": "User clicks any button",
-				"name": "Button Clicked",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"button_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_color"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User clicks email link",
-				"name": "Email Link Clicked",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"campaign_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email_subject": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User views any page",
-				"name": "Page Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User views a product",
-				"name": "Product Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"category": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"duration": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"expiration_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"price": {
-									"description": "...",
-									"type": [
-										"number"
-									]
-								},
-								"quantity": {
-									"description": "...",
-									"type": [
-										"integer"
-									]
-								},
-								"sku": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"start_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"variant": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"sku"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
 				"description": "User updates profile",
 				"name": "Profile Updated",
 				"rules": {
@@ -247,8 +79,7 @@
 				"version": 1
 			},
 			{
-				"description": "User signs in",
-				"name": "Signed In",
+				"name": "Test",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -256,195 +87,21 @@
 						},
 						"properties": {
 							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
+								"p1": {
+									"description": "",
+									"id": "/properties/properties/properties/p1",
+									"type": "object"
 								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User signs up",
-				"name": "Signed Up",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_color",
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User starts product/service trial",
-				"name": "Trial Started",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"trial_end_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"trial_plan_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"trial_start_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
+								"p2": {
+									"description": "",
+									"id": "/properties/properties/properties/p2",
+									"type": "object"
 								}
 							},
 							"type": "object"
 						},
 						"traits": {
+							"type": "object"
 						}
 					},
 					"type": "object"
@@ -469,5 +126,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-07-07T18:40:11.000Z"
+	"update_time": "2022-08-09T21:26:42.000Z"
 }
