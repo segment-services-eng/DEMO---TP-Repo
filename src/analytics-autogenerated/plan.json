@@ -64,36 +64,36 @@
 										"string"
 									]
 								},
+								"email": {
+									"description": "the user's email address",
+									"type": [
+										"string"
+									]
+								},
 								"email_subject": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
 									"description": "...",
 									"type": [
 										"string"
 									]
 								}
 							},
+							"required": [
+								"user_id"
+							],
 							"type": "object"
 						},
 						"traits": {
 						}
 					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User views any page",
-				"name": "Page Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
@@ -195,7 +195,7 @@
 									]
 								},
 								"email": {
-									"description": "...",
+									"description": "the user's email address",
 									"type": [
 										"string"
 									]
@@ -269,7 +269,7 @@
 									]
 								},
 								"email": {
-									"description": "...",
+									"description": "the user's email address",
 									"type": [
 										"string"
 									]
@@ -361,7 +361,7 @@
 									]
 								},
 								"email": {
-									"description": "...",
+									"description": "the user's email address",
 									"type": [
 										"string"
 									]
@@ -469,5 +469,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-07-07T18:40:11.000Z"
+	"update_time": "2022-08-19T17:18:13.000Z"
 }
