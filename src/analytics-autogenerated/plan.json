@@ -14,8 +14,8 @@
 						},
 						"properties": {
 							"properties": {
-								"button_color": {
-									"description": "...",
+								"button_clr": {
+									"description": "the color of the button!!!!",
 									"type": [
 										"string"
 									]
@@ -34,7 +34,7 @@
 								}
 							},
 							"required": [
-								"button_color"
+								"button_clr"
 							],
 							"type": "object"
 						},
@@ -49,8 +49,8 @@
 				"version": 1
 			},
 			{
-				"description": "User clicks email link",
-				"name": "Email Link Clicked",
+				"description": "User invites another user",
+				"name": "Invite Sent",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -58,24 +58,42 @@
 						},
 						"properties": {
 							"properties": {
-								"campaign_name": {
+								"account_type": {
 									"description": "...",
 									"type": [
 										"string"
 									]
 								},
-								"email_subject": {
+								"birthday": {
 									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_clr": {
+									"description": "the color of the button!!!!",
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"description": "the user's email address",
 									"type": [
 										"string"
 									]
 								}
 							},
+							"required": [
+								"button_clr"
+							],
 							"type": "object"
 						},
 						"traits": {
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
@@ -89,25 +107,43 @@
 						"context": {
 						},
 						"properties": {
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User views a product",
-				"name": "Product Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
 							"properties": {
+								"account_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_clr": {
+									"description": "the color of the button!!!!",
+									"type": [
+										"string"
+									]
+								},
+								"button_text": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"campaign_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
 								"category": {
 									"description": "...",
 									"type": [
@@ -120,7 +156,73 @@
 										"string"
 									]
 								},
+								"email": {
+									"description": "the user's email address",
+									"type": [
+										"string"
+									]
+								},
+								"email_subject": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
 								"expiration_date": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"invitee_email": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"invitee_first_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"invitee_last_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"invitee_role": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"order_id": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"payment_method": {
 									"description": "...",
 									"type": [
 										"string"
@@ -132,10 +234,85 @@
 										"number"
 									]
 								},
+								"products": {
+									"description": "...",
+									"items": {
+										"properties": {
+											"category": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											},
+											"duration": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											},
+											"expiration_date": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											},
+											"price": {
+												"description": "...",
+												"type": [
+													"number"
+												]
+											},
+											"quantity": {
+												"description": "...",
+												"type": [
+													"integer"
+												]
+											},
+											"sku": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											},
+											"start_date": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											},
+											"variant": {
+												"description": "...",
+												"type": [
+													"string"
+												]
+											}
+										},
+										"required": [
+										],
+										"type": [
+											"object"
+										]
+									},
+									"type": [
+										"array"
+									]
+								},
 								"quantity": {
 									"description": "...",
 									"type": [
 										"integer"
+									]
+								},
+								"shipping": {
+									"description": "...",
+									"type": [
+										"number"
+									]
+								},
+								"signup_type": {
+									"description": "...",
+									"type": [
+										"string"
 									]
 								},
 								"sku": {
@@ -150,279 +327,18 @@
 										"string"
 									]
 								},
-								"variant": {
+								"tax": {
 									"description": "...",
 									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"sku"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User updates profile",
-				"name": "Profile Updated",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
+										"number"
 									]
 								},
-								"birthday": {
+								"total": {
 									"description": "...",
 									"type": [
-										"string"
+										"number"
 									]
 								},
-								"email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User signs in",
-				"name": "Signed In",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User signs up",
-				"name": "Signed Up",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_color",
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User starts product/service trial",
-				"name": "Trial Started",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
 								"trial_end_date": {
 									"description": "...",
 									"type": [
@@ -440,13 +356,35 @@
 									"type": [
 										"string"
 									]
+								},
+								"user_id": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"description": "...",
+									"type": [
+										"string"
+									]
 								}
 							},
+							"required": [
+								"button_clr",
+								"order_id",
+								"sku",
+								"total",
+								"user_id"
+							],
 							"type": "object"
 						},
 						"traits": {
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
@@ -469,5 +407,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-07-07T18:40:11.000Z"
+	"update_time": "2022-08-24T16:38:23.000Z"
 }
