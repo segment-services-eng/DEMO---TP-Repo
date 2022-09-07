@@ -16,366 +16,33 @@
 							"properties": {
 								"button_clr": {
 									"description": "the color of the button!!!!",
+									"id": "/properties/properties/properties/button_clr",
 									"type": [
 										"string"
 									]
 								},
 								"button_text": {
 									"description": "...",
+									"id": "/properties/properties/properties/button_text",
 									"type": [
 										"string"
 									]
 								},
 								"button_type": {
 									"description": "...",
+									"id": "/properties/properties/properties/button_type",
 									"type": [
 										"string"
 									]
+								},
+								"new_button_prop": {
+									"description": "Because I can",
+									"id": "/properties/properties/properties/new_button_prop",
+									"type": "object"
 								}
 							},
 							"required": [
 								"button_clr"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User invites another user",
-				"name": "Invite Sent",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_clr": {
-									"description": "the color of the button!!!!",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "the user's email address",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_clr"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"description": "User views any page",
-				"name": "Page Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_clr": {
-									"description": "the color of the button!!!!",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"campaign_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"category": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"duration": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "the user's email address",
-									"type": [
-										"string"
-									]
-								},
-								"email_subject": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"expiration_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"invitee_email": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"invitee_first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"invitee_last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"invitee_role": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"order_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"payment_method": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"price": {
-									"description": "...",
-									"type": [
-										"number"
-									]
-								},
-								"products": {
-									"description": "...",
-									"items": {
-										"properties": {
-											"category": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											},
-											"duration": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											},
-											"expiration_date": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											},
-											"price": {
-												"description": "...",
-												"type": [
-													"number"
-												]
-											},
-											"quantity": {
-												"description": "...",
-												"type": [
-													"integer"
-												]
-											},
-											"sku": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											},
-											"start_date": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											},
-											"variant": {
-												"description": "...",
-												"type": [
-													"string"
-												]
-											}
-										},
-										"required": [
-										],
-										"type": [
-											"object"
-										]
-									},
-									"type": [
-										"array"
-									]
-								},
-								"quantity": {
-									"description": "...",
-									"type": [
-										"integer"
-									]
-								},
-								"shipping": {
-									"description": "...",
-									"type": [
-										"number"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"sku": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"start_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"tax": {
-									"description": "...",
-									"type": [
-										"number"
-									]
-								},
-								"total": {
-									"description": "...",
-									"type": [
-										"number"
-									]
-								},
-								"trial_end_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"trial_plan_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"trial_start_date": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"variant": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_clr",
-								"order_id",
-								"sku",
-								"total",
-								"user_id"
 							],
 							"type": "object"
 						},
@@ -407,5 +74,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-08-24T16:38:23.000Z"
+	"update_time": "2022-09-07T15:02:40.000Z"
 }
