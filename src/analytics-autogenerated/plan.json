@@ -14,35 +14,15 @@
 						},
 						"properties": {
 							"properties": {
-								"button_clr": {
-									"description": "the color of the button!!!!",
-									"id": "/properties/properties/properties/button_clr",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
+								"button_color": {
 									"description": "...",
-									"id": "/properties/properties/properties/button_text",
 									"type": [
 										"string"
 									]
-								},
-								"button_type": {
-									"description": "...",
-									"id": "/properties/properties/properties/button_type",
-									"type": [
-										"string"
-									]
-								},
-								"new_button_prop": {
-									"description": "Because I can",
-									"id": "/properties/properties/properties/new_button_prop",
-									"type": "object"
 								}
 							},
 							"required": [
-								"button_clr"
+								"button_color"
 							],
 							"type": "object"
 						},
@@ -74,5 +54,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-09-07T15:02:40.000Z"
+	"update_time": "2022-09-28T19:59:42.000Z"
 }
