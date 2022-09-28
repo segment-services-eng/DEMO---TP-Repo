@@ -14,35 +14,127 @@
 						},
 						"properties": {
 							"properties": {
-								"button_clr": {
-									"description": "the color of the button!!!!",
-									"id": "/properties/properties/properties/button_clr",
+								"button_color": {
+									"description": "...",
 									"type": [
 										"string"
 									]
 								},
 								"button_text": {
 									"description": "...",
-									"id": "/properties/properties/properties/button_text",
 									"type": [
 										"string"
 									]
 								},
 								"button_type": {
 									"description": "...",
-									"id": "/properties/properties/properties/button_type",
 									"type": [
 										"string"
 									]
 								},
-								"new_button_prop": {
-									"description": "Because I can",
-									"id": "/properties/properties/properties/new_button_prop",
-									"type": "object"
+								"user_id": {
+									"description": "...",
+									"type": [
+										"string"
+									]
 								}
 							},
 							"required": [
-								"button_clr"
+								"button_color",
+								"user_id"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"description": "User signs up",
+				"name": "Signed Up",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"account_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_color": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_text": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"signup_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"button_color",
+								"user_id"
 							],
 							"type": "object"
 						},
@@ -74,5 +166,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-09-07T15:02:40.000Z"
+	"update_time": "2022-09-28T21:04:05.000Z"
 }
