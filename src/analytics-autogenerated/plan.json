@@ -99,6 +99,80 @@
 				"version": 1
 			},
 			{
+				"description": "User adds product to cart",
+				"name": "Product Added",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"category": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"duration": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"expiration_date": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"price": {
+									"description": "...",
+									"type": [
+										"number"
+									]
+								},
+								"quantity": {
+									"description": "...",
+									"type": [
+										"integer"
+									]
+								},
+								"sku": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"start_date": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"variant": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"sku"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"description": "User signs in",
 				"name": "Signed In",
 				"rules": {
@@ -173,6 +247,99 @@
 				"version": 1
 			},
 			{
+				"description": "User signs up",
+				"name": "Signed Up",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"account_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"birthday": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_clr": {
+									"description": "the color of the button!!!!",
+									"type": [
+										"string"
+									]
+								},
+								"button_text": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"button_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"email": {
+									"description": "the user's email address",
+									"type": [
+										"string"
+									]
+								},
+								"favorite_color": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"first_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"last_name": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"signup_type": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								},
+								"user_id": {
+									"description": "...",
+									"type": [
+										"string"
+									]
+								}
+							},
+							"required": [
+								"button_clr",
+								"user_id"
+							],
+							"type": "object"
+						},
+						"traits": {
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"description": "User starts product/service trial",
 				"name": "Trial Started",
 				"rules": {
@@ -228,5 +395,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-10-07T13:12:22.000Z"
+	"update_time": "2022-10-12T22:51:13.000Z"
 }
