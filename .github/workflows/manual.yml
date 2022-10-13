@@ -18,4 +18,4 @@ jobs:
       with:
         node-version: 12.x
     - name: run script
-      run: node render.js
+      run: node ./render.js
