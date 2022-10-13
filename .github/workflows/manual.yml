@@ -6,16 +6,16 @@ name: Manual workflow
 # or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name: 
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     name: do-the-thing
     runs-on: ubuntu-latest
     steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
     - name: run script
-      run: |
-        npm install
-        node render.js
+      run: node render.js
