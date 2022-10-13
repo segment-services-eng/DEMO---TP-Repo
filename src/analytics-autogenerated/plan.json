@@ -173,80 +173,6 @@
 				"version": 1
 			},
 			{
-				"description": "User signs in",
-				"name": "Signed In",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"birthday": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"email": {
-									"description": "the user's email address",
-									"type": [
-										"string"
-									]
-								},
-								"favorite_color": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"first_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"last_name": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"signup_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"user_id": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"user_id"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
 				"description": "User signs up",
 				"name": "Signed Up",
 				"rules": {
@@ -395,5 +321,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-10-12T22:51:13.000Z"
+	"update_time": "2022-10-13T03:23:08.000Z"
 }
