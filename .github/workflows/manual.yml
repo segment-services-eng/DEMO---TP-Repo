@@ -9,24 +9,13 @@ on:
     # Inputs the workflow accepts.
     inputs:
       name: 
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Run this script manually'
-        # Default value if no value is explicitly provided
-#         default: 'World'
-#         Input has to be provided for the workflow to run
-#         required: true
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  json-to-md:
-    # The type of runner that the job will run on
+  build:
+    name: do-the-thing
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Convert new TP to Markdown
-      run: node render.js
+    - name: run script
+      run: |
+        npm install
+        node render.js
