@@ -2,10 +2,6 @@
 
 name: Manual workflow
 
-defaults:
-  run:
-    working-directory: scripts
-
 on:
   workflow_dispatch:
 
@@ -21,3 +17,4 @@ jobs:
         node-version: 12.x
     - name: run script
       run: node render.js
+      working-directory: scripts
