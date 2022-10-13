@@ -2,8 +2,10 @@
 
 name: Manual workflow
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
+defaults:
+  run:
+    working-directory: scripts
+
 on:
   workflow_dispatch:
 
@@ -18,4 +20,4 @@ jobs:
       with:
         node-version: 12.x
     - name: run script
-      run: node ./render.js
+      run: node render.js
