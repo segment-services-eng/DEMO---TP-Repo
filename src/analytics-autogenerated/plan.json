@@ -5,50 +5,6 @@
 	"rules": {
 		"events": [
 			{
-				"description": "User clicks any button",
-				"name": "Button Clicked",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"button_clr": {
-									"description": "the color of the button!!!!",
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"description": "...",
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_clr"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
 				"description": "User clicks email link",
 				"name": "Email Link Clicked",
 				"rules": {
@@ -395,5 +351,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-11-14T20:35:58.000Z"
+	"update_time": "2023-06-08T20:15:29.000Z"
 }
