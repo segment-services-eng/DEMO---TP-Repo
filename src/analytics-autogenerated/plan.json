@@ -6,7 +6,7 @@
 		"events": [
 			{
 				"description": "User clicks email link",
-				"name": "Email Link Clicked",
+				"name": "Email Link Clicked!",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -16,24 +16,28 @@
 							"properties": {
 								"campaign_name": {
 									"description": "...",
+									"id": "/properties/properties/properties/campaign_name",
 									"type": [
 										"string"
 									]
 								},
 								"email": {
 									"description": "the user's email address",
+									"id": "/properties/properties/properties/email",
 									"type": [
 										"string"
 									]
 								},
 								"email_subject": {
 									"description": "...",
+									"id": "/properties/properties/properties/email_subject",
 									"type": [
 										"string"
 									]
 								},
 								"user_id": {
 									"description": "...",
+									"id": "/properties/properties/properties/user_id",
 									"type": [
 										"string"
 									]
@@ -351,5 +355,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2023-06-08T20:15:29.000Z"
+	"update_time": "2023-09-08T15:17:29.000Z"
 }
